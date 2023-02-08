@@ -1,0 +1,103 @@
+ul{
+    list-style: none;
+  }
+
+.news-section{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-title{
+  margin-bottom: 0;
+  margin-left: 2.5rem;
+  font-size: 2rem;
+  color: rgb(170, 29, 29);
+}
+
+.news-list{
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.new-li{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.new-title{
+  font-size: 3rem;
+  text-align: justify;
+  margin: 0;
+  padding: 1rem;
+}
+
+.new-image{
+  width: 95%;
+  margin: 1rem;
+  align-self: center;
+}
+
+.new-date{
+  font-size: 1rem;
+  color: rgb(107, 105, 105);
+  font-weight: 700;
+  padding: 1rem;
+  margin: 0;
+}
+
+.new-body{
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  margin: 0;
+}
+
+.new-aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-title{
+  font-size: 2rem;
+}
+
+.new-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-label{
+  font-size: 1rem;
+  color: rgb(28, 26, 31);
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.input-box{
+  margin: 0.5rem;
+  width: 10rem;
+}
+
+.form-button{
+  margin-top: 2rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  background-color: rgb(207, 207, 206);
+  align-self: center;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+}
