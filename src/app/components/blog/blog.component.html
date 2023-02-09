@@ -1,48 +1,52 @@
-<section class="news-section">
+<div class="wrapper">
 
-    <h1 class="blog-title">Últimas Noticias</h1>
+    <section class="news-section">
 
-
-    <ul class="news-list">
-        <li class="new-li" *ngFor="let noticia of arrNoticias">
-            <h1 class="new-title" [innerHTML]="noticia.Titulo"> </h1>
-            <img class="new-image" [src]="noticia.Imagen">
-            <p class="new-date" [innerHTML]="noticia.Fecha"></p>
-            <p class="new-body" [innerHTML]="noticia.Cuerpo"></p>
-        </li>
-    </ul>
-
-</section>
-
-
-<aside class="new-aside">
-
-    <h1 class="form-title">Añadir noticia</h1>
-
-    <div class="new-form">
-
-        <div class="input">
-            <label class="input-label" for="Titulo"> Introduce el título de la noticia</label>
-            <input class="input-box" type="text" id="Titulo" [(ngModel)]="Titulo">
+        <h1 class="blog-title">Últimas Noticias</h1>
+        
+        <div class="news-wrapper">
+            <div class="news-item" *ngFor="let noticia of arrNoticias">
+                <h1 class="new-title" [innerHTML]="noticia.Titulo"> </h1>
+                <img class="new-image" [src]="noticia.Imagen">
+                <small class="update-date">Fecha de publicación: </small>
+                <p class="new-date" [innerHTML]="noticia.Fecha"></p>
+                <p class="new-body" [innerHTML]="noticia.Cuerpo"></p>
+            </div>
         </div>
 
-        <div class="input">
-            <label class="input-label" for="Imagen"> Introduce la url de la imagen</label>
-            <input class="input-box" type="text" id="Imagen" [(ngModel)]="Imagen">
+    </section>
+
+
+    <aside class="new-aside">
+
+        <h1 class="form-title">Añadir noticia</h1>
+
+        <div class="new-form">
+
+            <div class="input">
+                <label class="input-label" for="Titulo"> Introduce el título de la noticia</label>
+                <input class="input-box" type="text" id="Titulo" [(ngModel)]="Titulo">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="Imagen"> Introduce la url de la imagen</label>
+                <input class="input-box" type="text" id="Imagen" [(ngModel)]="Imagen">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="Cuerpo"> Introduce el cuerpo de la noticia</label>
+                <input class="input-box" type="text" id="Cuerpo" [(ngModel)]="Cuerpo">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="Fecha"> Introduce la fecha de la noticia</label>
+                <input class="input-box" type="date" id="Fecha" [(ngModel)]="Fecha">
+            </div>
+
+            <button class="form-button" (click)="addNoticia()">Añadir noticia</button>
+
         </div>
 
-        <div class="input">
-            <label class="input-label" for="Cuerpo"> Introduce el cuerpo de la noticia</label>
-            <input class="input-box" type="text" id="Cuerpo" [(ngModel)]="Cuerpo">
-        </div>
+    </aside>
 
-        <div class="input">
-            <label class="input-label" for="Fecha"> Introduce la fecha de la noticia</label>
-            <input class="input-box" type="date" id="Fecha" [(ngModel)]="Fecha">
-        </div>
-
-        <button class="form-button" (click)="addNoticia()">Añadir noticia</button>
-
-    </div>
-
-</aside>
+</div>
