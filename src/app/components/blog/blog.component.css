@@ -1,3 +1,11 @@
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 75rem;
+  padding-left: 1rem;
+}
+
+
 ul{
     list-style: none;
   }
@@ -15,41 +23,59 @@ ul{
   margin-left: 2.5rem;
   font-size: 2rem;
   color: rgb(170, 29, 29);
+  border-bottom: 0.3rem solid rgb(170, 29, 29);
+  margin-bottom: 0;
+
 }
 
-.news-list{
+.news-wrapper{
   margin-right: 2rem;
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
 }
 
-.new-li{
+.news-section{
   display: flex;
-  flex-direction: column;
+}
 
+.news-item{
+  flex-basis: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgb(187, 187, 187);
+  border-radius: 0.5rem;
 }
 
 .new-title{
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: justify;
   margin: 0;
+  margin-bottom: 0.5rem;
   padding: 1rem;
 }
 
 .new-image{
   width: 95%;
   margin: 1rem;
+  margin-bottom: 0.5rem;
   align-self: center;
 }
+
+.update-date{
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: rgb(107, 105, 105);
+}
+
 
 .new-date{
   font-size: 1rem;
   color: rgb(107, 105, 105);
   font-weight: 700;
   padding: 1rem;
-  margin: 0;
+  margin: 1rem;
+  margin-top: 0;
 }
 
 .new-body{
@@ -57,6 +83,7 @@ ul{
   text-align: justify;
   padding: 1rem;
   margin: 0;
+  padding-top: 0;
 }
 
 .new-aside{
@@ -64,6 +91,11 @@ ul{
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  border: 0.3rem solid rgb(170, 29, 29);
+  border-radius: 0.5rem;
+  padding-top: 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .form-title{
@@ -100,4 +132,20 @@ ul{
   align-self: center;
   border: 0.1rem solid black;
   border-radius: 0.3rem;
+}
+
+
+@media (min-width: 1024px) {
+  .news-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  .news-item{
+    flex-basis: 43%;
+  }
+
 }
